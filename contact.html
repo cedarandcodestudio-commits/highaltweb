@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan My Trip | High Alt Travel</title>
+<meta name="description" content="Start planning a bespoke journey with High Alt Travel.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+<a href="index.html" class="nav-brand">
+    <img class="nav-logo" src="logo.png" alt="High Alt Travel logo">
+    <div class="nav-wordmark">
+        <span class="name">High Alt Travel</span>
+        <span class="sub">Curated Journeys for the Modern Woman</span>
+    </div>
+</a>
+    <div class="nav-links">
+        <a href="index.html#destinations">Destinations</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="index.html#testimonials">Stories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Plan My Trip</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#destinations" class="mobile-link">Destinations</a>
+    <a href="index.html#process" class="mobile-link">How It Works</a>
+    <a href="index.html#testimonials" class="mobile-link">Stories</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link m-cta">Plan My Trip</a>
+</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+    <div class="section-eyebrow reveal">Start Planning</div>
+    <h1 class="section-title reveal reveal-delay-1">Plan my <em>trip.</em></h1>
+    <p class="page-lede reveal reveal-delay-2">Tell us where you dream of going. We respond within 24 hours with ideas, inspiration, and a plan to make it real.</p>
+</header>
+
+<section class="newsletter" style="border-top:none;">
+    <div class="nl-text prose">
+        <h2 class="reveal">Let's design your <em>journey.</em></h2>
+        <p class="reveal reveal-delay-1">Share a few details and Victoria will be in touch within 24 hours to schedule your Dream Session, a relaxed conversation about your style, your timeline, and the moments you can't wait to experience.</p>
+        <h3 class="reveal reveal-delay-2">Prefer email?</h3>
+        <p class="reveal reveal-delay-2"><a href="mailto:Victoria.lamy@fora.travel">Victoria.lamy@fora.travel</a></p>
+        <h3 class="reveal reveal-delay-3">Follow along</h3>
+        <p class="reveal reveal-delay-3"><a href="https://www.instagram.com/highalttravel" target="_blank" rel="noopener">@highalttravel</a> on Instagram</p>
+    </div>
+
+    <form class="nl-form reveal reveal-delay-1" action="https://formspree.io/f/xaqkabjv" method="POST">
+        <input type="hidden" name="_subject" value="New trip inquiry from the High Alt Travel website">
+        <div class="nl-select-row">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="First Name" placeholder="First Name" autocomplete="given-name" required>
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Last Name" placeholder="Last Name" autocomplete="family-name" required>
+        </div>
+        <input class="nl-input" style="border-right: 1px solid var(--border);" type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+        <div class="nl-select-row">
+            <select class="nl-select" name="Destination" required>
+                <option value="" disabled selected>Dream Destination</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="The Americas">The Americas</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Somewhere New">Somewhere New</option>
+            </select>
+            <select class="nl-select" name="Duration" required>
+                <option value="" disabled selected>Trip Duration</option>
+                <option value="5-7 nights">5–7 nights</option>
+                <option value="8-10 nights">8–10 nights</option>
+                <option value="11-14 nights">11–14 nights</option>
+                <option value="14+ nights">14+ nights</option>
+            </select>
+        </div>
+        <div class="nl-select-row">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Travel Dates" placeholder="Ideal travel dates">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Travelers" placeholder="Number of travelers">
+        </div>
+        <textarea class="nl-input nl-textarea" name="Message" rows="5" placeholder="Tell us about your dream trip…" required></textarea>
+        <button class="nl-submit" type="submit">Let's Go →</button>
+        <p class="nl-note">No commitment required. Your details are never shared.</p>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+        <a href="index.html" class="nav-brand" style="gap:14px;">
+        <img class="nav-logo" src="logo.png" width="48" height="48" alt="High Alt Travel logo">
+            <div class="nav-wordmark">
+            <span class="name" style="color:var(--cream);font-size:20px;">High Alt Travel</span>
+            <span class="sub" style="color:var(--gold);">Curated Journeys</span>
+            </div>
+        </a>
+        <p>Bespoke travel for the modern woman. Every journey designed with intention, care, and an eye for the extraordinary.</p>
+        </div>
+        <div class="footer-col">
+        <h4>Destinations</h4>
+        <a href="europe.html">Europe</a>
+        <a href="asia.html">Asia</a>
+        <a href="africa.html">Africa</a>
+        <a href="americas.html">The Americas</a>
+        <a href="oceania.html">Oceania</a>
+        </div>
+        <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="press.html">Press</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://view-from-high-alt.beehiiv.com/" target="_blank" rel="noopener">Travel Journal</a>
+        <a href="packing-guides.html">Packing Guides</a>
+        <a href="visa-info.html">Visa Info</a>
+        <a href="travel-insurance.html">Travel Insurance</a>
+        <a href="faq.html">FAQs</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-copy">© 2026 High Alt Travel. All rights reserved.</p>
+        <div class="footer-socials">
+        <a href="https://www.instagram.com/highalttravel" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
