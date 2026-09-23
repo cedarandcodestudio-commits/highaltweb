@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Americas Destinations | High Alt Travel</title>
-<meta name="description" content="Glacier-carved peaks, tango-filled nights, and some of the world&#x27;s most exciting food cities, all within reach.">
+<title>Plan My Trip | High Alt Travel</title>
+<meta name="description" content="Start planning a bespoke journey with High Alt Travel.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="stylesheet" href="styles.css">
@@ -41,61 +41,54 @@
 
 <!-- PAGE HERO -->
 <header class="page-hero">
-    <div class="section-eyebrow reveal">Destinations</div>
-    <h1 class="section-title reveal reveal-delay-1">The <em>Americas.</em></h1>
-    <p class="page-lede reveal reveal-delay-2">Glacier-carved peaks, tango-filled nights, and some of the world's most exciting food cities, all within reach.</p>
+    <div class="section-eyebrow reveal">Start Planning</div>
+    <h1 class="section-title reveal reveal-delay-1">Plan my <em>trip.</em></h1>
+    <p class="page-lede reveal reveal-delay-2">Tell us where you dream of going. We respond within 24 hours with ideas, inspiration, and a plan to make it real.</p>
 </header>
 
-<section class="page-body">
-    <div class="prose" style="margin-bottom:56px;">
-        <h2 class="reveal">From the Andes <em>to the city.</em></h2>
-        <p class="reveal reveal-delay-1">Our Americas journeys balance wild landscapes with vibrant culture. Hike beneath granite spires one week and sip Malbec in a Buenos Aires courtyard the next, with every connection handled.</p>
+<section class="newsletter" style="border-top:none;">
+    <div class="nl-text prose">
+        <h2 class="reveal">Let's design your <em>journey.</em></h2>
+        <p class="reveal reveal-delay-1">Share a few details and Victoria will be in touch within 24 hours to schedule your Dream Session, a relaxed conversation about your style, your timeline, and the moments you can't wait to experience.</p>
+        <h3 class="reveal reveal-delay-2">Prefer email?</h3>
+        <p class="reveal reveal-delay-2"><a href="mailto:Victoria.lamy@fora.travel">Victoria.lamy@fora.travel</a></p>
+        <h3 class="reveal reveal-delay-3">Follow along</h3>
+        <p class="reveal reveal-delay-3"><a href="https://www.instagram.com/highalttravel" target="_blank" rel="noopener">@highalttravel</a> on Instagram</p>
     </div>
-    <div class="card-grid">
-        <div class="info-card reveal">
-            <div class="meta">South America</div>
-            <h3>Patagonia</h3>
-            <p>Torres del Paine and El Calafate from a design-forward lodge. Guided hikes, glacier cruises, and big-sky silence.</p>
-            <div class="facts">
-                <div>Stay<span>10 – 16 nights</span></div>
-                <div>Best Time<span>Nov – Mar</span></div>
-            </div>
-        </div>
-        <div class="info-card reveal reveal-delay-1">
-            <div class="meta">South America</div>
-            <h3>Buenos Aires</h3>
-            <p>Leafy Palermo, private tango lessons, parrilla feasts, and day trips to Uruguay or wine country.</p>
-            <div class="facts">
-                <div>Stay<span>4 – 7 nights</span></div>
-                <div>Best Time<span>Mar – May, Sep – Nov</span></div>
-            </div>
-        </div>
-        <div class="info-card reveal reveal-delay-2">
-            <div class="meta">North America</div>
-            <h3>Mexico City</h3>
-            <p>World-class dining, Frida Kahlo's Casa Azul, mezcal tastings, and art-filled neighborhoods to wander.</p>
-            <div class="facts">
-                <div>Stay<span>4 – 6 nights</span></div>
-                <div>Best Time<span>Oct – May</span></div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="page-body alt">
-    <div class="prose">
-        <h2 class="reveal">Every itinerary is <em>yours.</em></h2>
-        <p class="reveal reveal-delay-1">These are starting points, not packages. Your advisor designs each journey from scratch around your pace, your budget, and the moments you're dreaming of, whether that's one city done beautifully or several countries stitched together seamlessly.</p>
-        <p class="reveal reveal-delay-2">Don't see the place you have in mind? We plan well beyond this list. <a href="contact.html">Tell us where you want to go.</a></p>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="page-cta">
-    <div class="section-eyebrow reveal" style="justify-content:center;">Stay Inspired</div>
-    <h2 class="section-title reveal reveal-delay-1">Your next <em>journey</em> awaits.</h2>
-    <p class="reveal reveal-delay-2">Join The Altitude Edit for dreamy destinations, insider tips, and the trips we're planning for clients, every Friday.</p>
-    <a href="index.html#newsletter" class="btn-primary reveal reveal-delay-3">Join The Altitude Edit</a>
+    <form class="nl-form reveal reveal-delay-1" action="https://formspree.io/f/xaqkabjv" method="POST">
+        <input type="hidden" name="_subject" value="New trip inquiry from the High Alt Travel website">
+        <div class="nl-select-row">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="First Name" placeholder="First Name" autocomplete="given-name" required>
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Last Name" placeholder="Last Name" autocomplete="family-name" required>
+        </div>
+        <input class="nl-input" style="border-right: 1px solid var(--border);" type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+        <div class="nl-select-row">
+            <select class="nl-select" name="Destination" required>
+                <option value="" disabled selected>Dream Destination</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="The Americas">The Americas</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Somewhere New">Somewhere New</option>
+            </select>
+            <select class="nl-select" name="Duration" required>
+                <option value="" disabled selected>Trip Duration</option>
+                <option value="5-7 nights">5–7 nights</option>
+                <option value="8-10 nights">8–10 nights</option>
+                <option value="11-14 nights">11–14 nights</option>
+                <option value="14+ nights">14+ nights</option>
+            </select>
+        </div>
+        <div class="nl-select-row">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Travel Dates" placeholder="Ideal travel dates">
+            <input class="nl-input" style="border-right: 1px solid var(--border);" type="text" name="Travelers" placeholder="Number of travelers">
+        </div>
+        <textarea class="nl-input nl-textarea" name="Message" rows="5" placeholder="Tell us about your dream trip…" required></textarea>
+        <button class="nl-submit" type="submit">Let's Go →</button>
+        <p class="nl-note">No commitment required. Your details are never shared.</p>
+    </form>
 </section>
 
 <!-- FOOTER -->
