@@ -329,41 +329,37 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(44,95,110,0.08); }
 
 /* destination background images */
 .d1 { 
-    background-image: url('images/amalfi.jpg'); 
+    background-image: url('almafi-coast.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
 
 .d2 { 
-    background-image: url('images/marrakech.jpg'); 
+    background-image: url('marakech.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
 
 .d3 { 
-    background-image: url('images/kyoto.jpg'); 
+    background-image: url('kyoto.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
 
 .d4 { 
-    background-image: url('images/patagonia.jpg'); 
+    background-image: url('patagonia.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
 
 .d5 { 
-    background-image: url('images/maldives.jpg'); 
+    background-image: url('maldives.jpg'); 
     background-size: cover; 
     background-position: center;
 }
 
 /* destination color fills (placeholder imagery via CSS) */
-.d1 { background: linear-gradient(135deg, #1a3a45 0%, #2c5f6e 40%, #8fb5bf 100%); }
-.d2 { background: linear-gradient(135deg, #3d2b1a 0%, #7a4e2e 50%, #c49a5a 100%); }
-.d3 { background: linear-gradient(135deg, #1a2d1a 0%, #2e5c2e 50%, #7ab87a 100%); }
-.d4 { background: linear-gradient(135deg, #2b1a3a 0%, #5a3a7a 50%, #b89ad4 100%); }
-.d5 { background: linear-gradient(135deg, #3a1a1a 0%, #7a3030 50%, #c48080 100%); }
+
 
 /* destination SVG scene overlays */
 .dest-scene { position: absolute; inset: 0; opacity: 0.18; }
