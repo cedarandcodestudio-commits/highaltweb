@@ -589,12 +589,21 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(44,95,110,0.08); }
 .faq-list details[open] summary::after { transform: rotate(45deg); }
 .faq-list .answer { padding: 0 0 28px; }
 .about-split {
-  display: grid; grid-template-columns: 1fr 1.3fr;
-  gap: 80px; align-items: center;
+  display: flex; flex-direction: column;
+  align-items: center; text-align: center;
+  gap: 48px; max-width: 740px; margin: 0 auto;
 }
+.about-split .prose h2 { margin-top: 0; }
+/* circular headshot, cropped in on the face */
 .about-photo {
-  width: 100%; aspect-ratio: 4/5; object-fit: cover;
-  border: 1px solid var(--border);
+  width: 260px; max-width: 70vw; aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url('unnamed.jpg');
+  background-size: 170% auto;
+  background-position: 40% 8%;
+  background-color: var(--cream-dark);
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 8px var(--cream), 0 0 0 9px var(--border);
 }
 .page-cta {
   background: var(--teal); text-align: center;
@@ -678,8 +687,6 @@ footer {
   .page-hero { padding: calc(var(--nav-h) + 72px) 48px 72px; }
   .page-body { padding: 80px 48px; }
   .card-grid { grid-template-columns: 1fr 1fr; }
-  .about-split { grid-template-columns: 1fr; gap: 48px; }
-  .about-photo { max-width: 420px; }
 }
 @media (max-width: 768px) {
   :root { --nav-h: 68px; }
