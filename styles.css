@@ -593,17 +593,18 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(44,95,110,0.08); }
   align-items: center; text-align: center;
   gap: 48px; max-width: 740px; margin: 0 auto;
 }
-.about-split .prose h2 { margin-top: 0; }
-/* circular headshot, cropped in on the face */
-.about-photo {
-  width: 260px; max-width: 70vw; aspect-ratio: 1;
+/* About page: circular portrait centered in the page hero */
+.page-hero--center { text-align: center; }
+.page-hero--center .section-eyebrow { justify-content: center; }
+.page-hero--center .page-lede { margin-left: auto; margin-right: auto; }
+.hero-portrait {
+  position: relative; z-index: 1;
+  width: 220px; max-width: 60vw; aspect-ratio: 1;
+  margin: 0 auto 36px;
   border-radius: 50%;
-  background-image: url('unnamed.jpg');
-  background-size: 170% auto;
-  background-position: 40% 8%;
-  background-color: var(--cream-dark);
-  border: 1px solid var(--gold);
-  box-shadow: 0 0 0 8px var(--cream), 0 0 0 9px var(--border);
+  object-fit: cover; object-position: 50% 15%;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 8px rgba(245,240,230,0.08);
 }
 .page-cta {
   background: var(--teal); text-align: center;
